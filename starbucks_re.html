@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style-type: none;
+        }
+
+        /* header */
+        header {
+            height: 120px;
+            background-color: #f6f5ef;      
+            display: flex;
+            align-items: center;
+            padding: 24px;
+        }
+
+        header .logo-wrapper {
+            width: 100px;
+            height: 100%;
+        }
+
+        header .logo-wrapper img {
+            height: 100%;
+            display: block;
+        }
+
+        header .gnb {              
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header .gnb nav {
+            text-align: right;            
+            flex: 1;
+        }
+
+        header .gnb nav:first-of-type {            
+        }
+
+        header .gnb nav:first-of-type a {
+            font-size: 13px;
+            height: 100%;
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            line-height: 36px;
+        }
+
+        header .gnb nav:first-of-type a:after {
+            content: '';
+            width: 1px;
+            height: 13px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #e4e4e4;
+        }
+
+        header .gnb nav:first-of-type a:last-of-type:after {
+            content: none;
+        }
+
+        header .gnb nav:nth-of-type(2) a {
+            font-size: 16px;
+        }
+
+        header .gnb nav a {
+            
+        }
+                
+        /* end header */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <a href="" class="logo-wrapper">
+            <img src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="" />
+        </a>
+
+        <!-- menus -->
+        <div class="gnb">
+            <!-- top menu -->
+            <nav>
+                <a href="">Sign In</a>
+                <a href="">My Startbucks</a>
+                <a href="">Customer Service & Ideas</a>
+                <a href="">Find a Store</a>
+            </nav>
+
+            <!-- gnb menu -->
+            <nav>
+                <a href="">COFFEE</a>
+                <a href="">MENU</a>
+                <a href="">STORE</a>
+                <a href="">RESPONSIBILITY</a>
+                <a href="">STARBUCKS REWARDS</a>
+                <a href="">WHAT'S NEW</a>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
