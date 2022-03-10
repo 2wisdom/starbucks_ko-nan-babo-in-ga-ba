@@ -1,113 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Starbucks Korea</title>
-    <link rel="shortcut icon" href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828" type="image/ico">
+    <link rel="sh
+    ortcut icon" href="https://image.istarbucks.co.kr/common/img/common/favicon.ico?v=200828" type="image/ico">
+
     <style>
 
         * {
             margin: 0;
             padding: 0;
-            border: 0;
-            font-size: 100%;
-            vertical-align: baseline;
-            background: transparent;
+            box-sizing: border-box;
         }
 
         a {
             text-decoration: none;
         }
 
-        body .header {
-            margin: left:24px; right:24px;
-            background: #f6f5ef;
-            border-bottom: 1px solid #e5e5e5;
-            border-top: 2px solid #000;
-            left: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: auto;
+        header {
+            background-color: #f6f5ef;
+            padding: 0 5.5px 0 5.5px;
         }
 
-        body h1 {
-            background: url(https://www.starbucks.co.kr/common/img/common/logo.png) no-repeat ;
-            background-size: 75px 75px;
-            display: block;
-            height: 100%;
-            width: 100%;
-            text-indent: -20000px;
+        header .logo img {
+            width: 75px;
+            height: 75px;
         }
 
-        body .link a {
+        header .top-menu a {
+            font-size: 13px;
             color: #555;
             display: block;
-            position: absolute;
-            background: url(https://www.starbucks.co.kr/common/img/common/sdown_util_sep.png) no-repeat;
             font: normal 13px Avenir, Arial, georgia;
         }
 
-        body a:hover {
+        header .gnb a {
+            color: #333;
+            display: flex;
+            font: normal 13px Avenir, Arial, georgia;
+        }
+
+        header nav a:hover {
             text-decoration: underline;
         }
 
-        body p {
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            position: absolute;
-        }
-
-        body .menu a {
-            color: #333;
-            display: block;
-            font: normal 13px Avenir, Arial, georgia;
-            text-align: center;
-            width: 100%;
-        }
-
-        
-
     </style>
-
 </head>
 
-<body>
-    
     <header>
     
-    <div class="header">
-        <h1>
-            <a href="" title="스타벅스 메인페이지">스타벅스 코리아</a>
-        </h1>
+    <!--logo-->
+    <a href="" class="logo">
+    <img alt=" " src="https://www.starbucks.co.kr/common/img/common/logo.png" />
+    </a>
 
-        <div class="link">
-            <ul>
-                <li><a href="">Sign In</a></li>
-                <li><a href="">My Starbucks</a></li>
-                <li><a href="">Customer Service & Ideas</a></li>
-                <li><a href="">Find a Store</a></li>
-            </ul>
-            <p>
-                <a href=""><img alt="통합검색" src="https://image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png"></a>
-            </p>
-        </div>
-    </div>
+    <!--top menu-->
 
-    <div class="menu">
-        <ul>
-            <h2><li><a href="">COFFEE</a></li></h2>
-            <h2><li><a href="">MENU</a></li></h2>
-            <h2><li><a href="">STORE</a></li></h2>
-            <h2><li><a href="">RESPONSIBILTY</a></li></h2>
-            <h2><li><a href="">STARBUCKS REWARDS</a></li></h2>
-            <h2><li><a href="">WHAT'S NEW</a></li></h2>
-        </ul>
+    <div class="gnb">
+
+        <nav>
+            <a href="">Sing In</a>
+            <a href="">My Starbucks</a>
+            <a href="">Customer Service & Ideas</a>
+            <a href="">Find a Store</a>
+        </nav>
+
+        <!--gnb menu-->
+
+        <nav>
+            <a href="">COFFEE</a>
+            <a href="">MENU</a>
+            <a href="">STORE</a>
+            <a href="">RESPNSIBILITY</a>
+            <a href="">STARBUCKS REWARDS</a>
+            <a href="">WHAT'S NEW</a>
+        </nav>
+
     </div>
 
     </header>
 
+<body>
+    
 </body>
 
 </html>
